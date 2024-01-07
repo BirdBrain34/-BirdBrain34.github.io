@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <title>Personal Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="DesignAndAnimation.styles.css">
+    </head>
+    <body>
+        <div id="firstFlexBox">
+            <div id="myPfp">
+                <p>Name: Atendido, Lance Vincent O.</p>
+                <p>Birthdate: October 3, 2003</p>
+                <p>Sex: Male</p>
+                <p>Age: 20</p>
+                <p>Favorite Food: Pasta🍝 and Ramen🍜</p>
+            </div>
+            <div id="facePic">
+                <img src="Atendido_Picture.PNG" width="170vw">
+            </div>
+        </div>
+        <div id="secondFlexBox">
+            <div id="skills">
+                <h1 id="skillName">Skills</h1>
+                <ul id="skillList">
+                    <li>Creative</li>
+                    <li>Critical Thinker</li>
+                    <li>Problem Solver</li>
+                </ul>
+            </div>
+            <div id="hobbies">
+                <h1 id="hobbyName">Hobbies</h1>
+                <ul id="hobbyList">
+                    <li>Gaming</li>
+                    <li>Video Editing</li>
+                    <li>Reading Manga</li>
+                </ul>
+            </div>
+        </div>
+        <div id="thirdFlexBox">
+            <h1>Favorite Animal</h1>
+            <div class="crow">
+                <div class="body"></div>
+                <div class="tailfeather"></div>
+                <div class="eye">
+                    <div class="eyeball"></div>
+                </div>
+                <div class="beak"></div>
+                <div class="wings">
+                    <div class="innerwing"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
