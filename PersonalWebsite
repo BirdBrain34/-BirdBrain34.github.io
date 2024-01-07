@@ -8,14 +8,16 @@
     <body>
         <div id="firstFlexBox">
             <div id="myPfp">
-                <p>Name: Atendido, Lance Vincent O.</p>
-                <p>Birthdate: October 3, 2003</p>
-                <p>Sex: Male</p>
-                <p>Age: 20</p>
-                <p>Favorite Food: Pasta🍝 and Ramen🍜</p>
+                <ul id="pfpList">
+                <li>Name: Atendido, Lance Vincent O.</li>
+                <li>Birthdate: October 3, 2003</li>
+                <li>Sex: Male</li>
+                <li>Age: 20</li>
+                <li>Favorite Food: Pasta🍝 and Ramen🍜</li>
+                </ul>
             </div>
             <div id="facePic">
-                <img src="Atendido_Picture.PNG" width="170vw">
+                <img src="Atendido_Picture.PNG" width="210vw">
             </div>
         </div>
         <div id="secondFlexBox">
@@ -37,7 +39,7 @@
             </div>
         </div>
         <div id="thirdFlexBox">
-            <h1>Favorite Animal</h1>
+            <h1>My Favorite Animal</h1>
             <div class="crow">
                 <div class="body"></div>
                 <div class="tailfeather"></div>
