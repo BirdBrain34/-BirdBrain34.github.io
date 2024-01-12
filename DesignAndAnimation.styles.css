@@ -3,13 +3,36 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-top: auto;
-    border: 20px solid green;
+    position: relative;
+}
+#firstFlexBox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: rgb(112, 231, 112);
+    z-index: -1;
+}
+#firstFlexBox::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: lightgreen;
+    z-index: -1;
+    height: 100%;
 }
 #myPfp{
     margin-left: 20px;
 }
 #facePic{
-    margin-right: 20px
+    margin-top: 25px;
+    background-color: rgb(165, 214, 165);
+    margin-right: 20px;
 }
 #pfpList{
     list-style: none;
@@ -28,8 +51,25 @@
     flex-direction: column; 
     align-items: center;
     padding: 10px;
-    margin-top: 20px;
-    border: 20px solid blue;
+    position: relative;
+    z-index: 1;
+}
+#secondFlexBox::before,
+#secondFlexBox::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 50%;
+    z-index: -1;
+}
+#secondFlexBox::before {
+    top: 0;
+    background-color: lightblue; 
+}
+#secondFlexBox::after {
+    bottom: 0;
+    background-color: skyblue;
 }
 #skillName,#hobbyName{
     text-align: center;
@@ -73,22 +113,28 @@
     opacity: 1; 
 }
 #skillList li:nth-child(1)::before {
-    background-image: url('https://i.redd.it/x8fzc3ytvdc21.jpg'); 
+    background-image: url('https://i.redd.it/x8fzc3ytvdc21.jpg');
+    background-size: 100% 100%; 
 }
 #skillList li:nth-child(2)::before {
     background-image: url('https://i.ytimg.com/vi/if-2M3K1tqk/maxresdefault.jpg'); 
+    background-size: 100% 100%;
 }
 #skillList li:nth-child(3)::before {
-    background-image: url('https://en.meming.world/images/en/thumb/4/4a/Modern_Problems_Require_Modern_Solutions.jpg/300px-Modern_Problems_Require_Modern_Solutions.jpg'); 
+    background-image: url('https://en.meming.world/images/en/thumb/4/4a/Modern_Problems_Require_Modern_Solutions.jpg/300px-Modern_Problems_Require_Modern_Solutions.jpg');
+    background-size: 100% 100%; 
 }
 #hobbyList li:nth-child(1)::before {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFIbKaN7slbiiwA2qvSlMboUDBYsqdJTEZNg&usqp=CAU'); 
+    background-image: url('https://i.ytimg.com/vi/hpBaL00U7lI/maxresdefault.jpg');
+    background-size: 100% 100%; 
 }
 #hobbyList li:nth-child(2)::before {
     background-image: url('https://mixkit.imgix.net/videos/preview/mixkit-man-editing-video-in-the-computer-23150-0.jpg?q=80&auto=format%2Ccompress');
+    background-size: 100% 100%;
 }
 #hobbyList li:nth-child(3)::before {
-    background-image: url('https://i.ytimg.com/vi/xzy_0m7jwRw/maxresdefault.jpg');
+    background-image: url('https://i.redd.it/4ysaz1ocmjqb1.jpg');
+    background-size: 100% 100%;
 }
 #thirdFlexBox{
     position: relative;
@@ -97,11 +143,11 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: auto;
-    bottom: -70px;
-    margin-bottom: 20px;
-    height: 370px; 
-    border: 20px solid red;
+    margin-bottom: 0px;
+    height: auto; 
+    background-color: #4B4B4B;
     padding-left: 20px; 
+    padding-bottom: 300px;
 }
 .crow{
     background-color: black;
@@ -189,4 +235,149 @@
     border-radius: 0px 0px 120px 120px;
     position: relative;
     left: 15px;
+}
+#crowText{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    color: black;
+    font-size: 16px;
+}
+#fourthFlexBox{
+    background-color: yellow;
+    margin-top: 0;
+    padding-top: 0;
+}
+#awardsName,#awards{
+    margin-left: 20px;
+}
+#awards li{
+    font-size: 20px;
+    transition: transform 800ms ease-in-out;
+}
+#awards li:hover { 
+    transform: scale(1.2) translateX(40px); 
+}
+#fifthFlexBox{
+    background-color: orange;
+    margin-top: 0;
+    padding-top: 0;
+    position: relative;
+}
+#pName,#pLanguage{
+    margin-left: 20px;
+}
+#pLanguage li{
+    position: relative;
+    font-size: 20px;
+    transition: transform 800ms ease-in-out;
+}
+#pLanguage li::before {
+    content: ''; 
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    margin-right: 10px; 
+    background-size: cover; 
+}
+#pLanguage li:nth-child(1)::before {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png');
+    background-size: 100% 100%;
+}
+#pLanguage li:nth-child(2)::before {
+    background-image: url('https://www.cdnlogo.com/logos/c/27/c.svg'); 
+    background-size: 100% 100%;
+}
+#pLanguage li:nth-child(3)::before {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/32/C%2B%2B_logo.png'); 
+    background-size: 100% 100%;
+}
+#pLanguage li:hover { 
+    transform: scale(1.2) translateX(50px); 
+}
+.pieChart {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    transform: translate(0%, 0%);
+    background: conic-gradient(rgb(239, 229, 33) 0% 30%, blue 0% 50%, purple 0% 20%);
+    margin-right: 20px;
+    transition: transform 800ms ease-in-out;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+}
+#text1 {
+    color: blue;
+    transform: rotate(0deg) translateX(7px) translateY(-30px);
+}
+#text2 {
+    color: white;
+    transform: rotate(0deg) translateX(-35px) translateY(-8px);
+}
+#text3 {
+    color: white;
+    transform: rotate(0deg) translateX(12px) translateY(20px);
+}
+.pieChart:hover {
+    transform: scale(1.2);
+}
+#sixthFlexBox{
+    background-color: plum;
+    margin-top: 0;
+    padding-top: 0;
+    position: relative;
+}
+#contactName, #contactList{
+    margin-left: 20px;
+}
+#contactList{
+    position: relative;
+    font-size: 20px;
+}
+#contactList li{
+    transition: transform 800ms ease-in-out;
+}
+#contactList li:hover { 
+    transform: scale(1.2) translateX(50px); 
+}
+#contactList li a:hover::before {
+    transition: transform 800ms ease-in-out;
+    transform: scale(1.2);
+}
+#contactList li::before {
+    content: ''; 
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    margin-right: 10px; 
+    background-size: cover; 
+}
+#contactList li:nth-child(1)::before {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png');
+    background-size: 100% 100%;
+}
+#contactList li:nth-child(2)::before {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png');
+    background-size: 100% 100%;
+}
+#contactList li:nth-child(3)::before {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/25/25231.png');
+    background-size: 100% 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
