@@ -391,7 +391,7 @@ body {
         font-size: 25px;
     }
     #skillList li,#hobbyList li{
-        margin-inline: 80px; 
+        margin-inline: 200px; 
         padding: 50px 90px;
     }
     #awards li:hover { 
@@ -401,12 +401,9 @@ body {
         transform: scale(1.2) translateX(80px); 
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     #pfpList{
-        font-size: 19px;
-    }
-    #facePic img{
-        margin-left: 40px;
+        font-size:20px;
     }
     #skillList li,#hobbyList li{
         margin-inline: 30px; 
@@ -419,7 +416,7 @@ body {
         transform: scale(1.2) translateX(50px); 
     }
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 320px) {
     #pfpList{
         font-size: 10px;
     }
