@@ -391,7 +391,7 @@ body {
         font-size: 25px;
     }
     #skillList li,#hobbyList li{
-        margin-inline: 200px; 
+        margin-inline: 80px; 
         padding: 50px 90px;
     }
     #awards li:hover { 
@@ -406,7 +406,7 @@ body {
         font-size:20px;
     }
     #skillList li,#hobbyList li{
-        margin-inline: 30px; 
+        margin-inline: 200px; 
         padding: 20px 40px;
     }
     #awards li:hover { 
