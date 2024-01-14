@@ -12,7 +12,7 @@
     left: 0;
     bottom: 0;
     width: 50%;
-    background-color: rgb(112, 231, 112);
+    background-color: #2ECBE9;
     z-index: -1;
 }
 #firstFlexBox::after {
@@ -22,17 +22,22 @@
     right: 0;
     bottom: 0;
     width: 50%;
-    background-color: lightgreen;
+    background-color: #128FC8;
     z-index: -1;
     height: 100%;
 }
 #myPfp{
     margin-left: 20px;
 }
-#facePic{
-    margin-top: 25px;
-    background-color: rgb(165, 214, 165);
-    margin-right: 20px;
+#facePic {
+    height: 100%;
+}
+#facePic img{
+    width: 100%;
+    height: 100%; 
+    opacity: 0.8;
+    object-fit: cover;
+    margin-bottom: 0px;
 }
 #pfpList{
     list-style: none;
@@ -65,11 +70,11 @@
 }
 #secondFlexBox::before {
     top: 0;
-    background-color: lightblue; 
+    background-color: #1E80C1; 
 }
 #secondFlexBox::after {
     bottom: 0;
-    background-color: skyblue;
+    background-color: #414C6B;
 }
 #skillName,#hobbyName{
     text-align: center;
@@ -147,14 +152,14 @@
     height: auto; 
     background-color: #4B4B4B;
     padding-left: 20px; 
-    padding-bottom: 300px;
+    padding-bottom: 230px;
 }
 .crow{
     background-color: black;
     height: 80px;
     width: 100px;
     position: absolute;
-    top: 35%;
+    top: 20%;
     left: 45%;
     border-radius: 100px 100px 0px 0px;
      animation: fly 2s infinite;
@@ -245,7 +250,7 @@
     font-size: 16px;
 }
 #fourthFlexBox{
-    background-color: yellow;
+    background-color: #FB8B00;
     margin-top: 0;
     padding-top: 0;
 }
@@ -260,7 +265,7 @@
     transform: scale(1.2) translateX(40px); 
 }
 #fifthFlexBox{
-    background-color: orange;
+    background-color: #FA7711;
     margin-top: 0;
     padding-top: 0;
     position: relative;
@@ -332,7 +337,7 @@
     transform: scale(1.2);
 }
 #sixthFlexBox{
-    background-color: plum;
+    background-color: #F34508;
     margin-top: 0;
     padding-top: 0;
     position: relative;
@@ -380,4 +385,90 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+}
+@media only screen and (max-width: 1200px) {
+    #pfpList{
+        font-size: 25px;
+    }
+    #skillList li,#hobbyList li{
+        margin-inline: 80px; 
+        padding: 50px 90px;
+    }
+    #awards li:hover { 
+        transform: scale(1.2) translateX(80px); 
+    }
+    #pLanguage li:hover { 
+        transform: scale(1.2) translateX(80px); 
+    }
+}
+@media only screen and (max-width: 600px) {
+    #pfpList{
+        font-size: 19px;
+    }
+    #facePic img{
+        margin-left: 40px;
+    }
+    #skillList li,#hobbyList li{
+        margin-inline: 30px; 
+        padding: 20px 40px;
+    }
+    #awards li:hover { 
+        transform: scale(1.2) translateX(40px); 
+    }
+    #pLanguage li:hover { 
+        transform: scale(1.2) translateX(50px); 
+    }
+}
+@media only screen and (max-width: 300px) {
+    #pfpList{
+        font-size: 10px;
+    }
+    #facePic img{
+        margin-left: 8px;
+    }
+    #skillList li,#hobbyList li{
+        margin-inline: 10px; 
+        padding: 5px 20px;
+    }
+    #pLanguage li{
+        font-size: 15px;
+    }
+    #pLanguage li:hover { 
+        transform: scale(1.2) translateX(15px); 
+    }
+    #awards li { 
+        font-size: 10px; 
+    }
+    #awards li:hover { 
+        transform: scale(1.2) translateX(15px); 
+    }
+    .pieChart {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 50%;
+        right: -5%;
+        margin-right: 25px;
+    }
+    .text{
+        font-size: 10px;
+    }
+    #text1 {
+        color: blue;
+        transform: rotate(0deg) translateX(5px) translateY(-20px);
+    }
+    #text2 {
+        color: white;
+        transform: rotate(0deg) translateX(-25px) translateY(-5px);
+    }
+    #text3 {
+        color: white;
+        transform: rotate(0deg) translateX(8px) translateY(15px);
+    }
+    #contactList{
+        font-size: 15px
+    }
+    #contactList li:hover { 
+        transform: scale(1.2) translateX(15px); 
+    }
 }
