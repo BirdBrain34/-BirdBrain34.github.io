@@ -93,9 +93,9 @@
 }
 #skillList li,#hobbyList li{
     position: relative;
-    margin-inline: 19px; 
+
     border: 10px solid black;
-    padding: 50px 90px;
+
     transition: transform 800ms ease-in-out;
 }
 #skillList li:hover,#hobbyList li:hover{
@@ -405,8 +405,9 @@ body {
     #pfpList{
         font-size:20px;
     }
+
     #skillList li,#hobbyList li{
-        margin-inline: 200px; 
+        margin-inline: 30px; 
         padding: 20px 40px;
     }
     #awards li:hover { 
