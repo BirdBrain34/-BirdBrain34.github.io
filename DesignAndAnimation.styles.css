@@ -93,6 +93,7 @@
 }
 #skillList li,#hobbyList li{
     position: relative;
+    margin-inline: 19px; 
     border: 10px solid black;
     padding: 50px 90px;
     transition: transform 800ms ease-in-out;
@@ -393,6 +394,10 @@ body {
         margin-inline: 120px; 
         padding: 50px 90px;
     }
+    #awards li, #pLanguage li, #contactList li {
+        margin-bottom: 15px;
+        transition: transform 800ms ease-in-out;
+    }
     #awards li:hover, #pLanguage li:hover, #contactList li:hover {
         transform: scale(1.2) translateX(80px);
     }
@@ -404,6 +409,10 @@ body {
     #skillList li,#hobbyList li{
         margin-inline: 60px; 
         padding: 20px 40px;
+    }
+    #awards li, #pLanguage li, #contactList li {
+        margin-bottom: 15px;
+        transition: transform 800ms ease-in-out;
     }
     #awards li:hover, #pLanguage li:hover, #contactList li:hover {
         transform: scale(1.2) translateX(30px);
@@ -451,6 +460,10 @@ body {
     }
     #contactList{
         font-size: 15px
+    }
+    #awards li, #pLanguage li, #contactList li {
+        margin-bottom: 15px;
+        transition: transform 800ms ease-in-out;
     }
     #awards li:hover, #pLanguage li:hover, #contactList li:hover {
         transform: scale(1.2) translateX(15px);
