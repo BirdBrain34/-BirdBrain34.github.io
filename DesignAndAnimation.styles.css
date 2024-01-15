@@ -386,12 +386,12 @@ body {
     flex-direction: column;
     height: 100vh;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
     #pfpList{
         font-size: 25px;
     }
     #skillList li,#hobbyList li{
-        margin-inline: 120px; 
+        margin-inline: 100px; 
         padding: 50px 90px;
     }
     #awards li, #pLanguage li, #contactList li {
@@ -399,7 +399,7 @@ body {
         transition: transform 800ms ease-in-out;
     }
     #awards li:hover, #pLanguage li:hover, #contactList li:hover {
-        transform: scale(1.2) translateX(80px);
+        transform: scale(1.2) translateX(100px);
     }
 }
 @media only screen and (max-width: 600px){
@@ -407,7 +407,7 @@ body {
         font-size:20px;
     }
     #skillList li,#hobbyList li{
-        margin-inline: 60px; 
+        margin-inline: 40px; 
         padding: 20px 40px;
     }
     #awards li, #pLanguage li, #contactList li {
@@ -426,7 +426,7 @@ body {
         margin-left: 8px;
     }
     #skillList li,#hobbyList li{
-        margin-inline: 30px; 
+        margin-inline: 15px; 
         padding: 5px 20px;
     }
     #pLanguage li{
