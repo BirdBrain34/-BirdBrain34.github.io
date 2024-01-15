@@ -391,7 +391,7 @@ body {
         font-size: 25px;
     }
     #skillList li,#hobbyList li{
-        margin-inline: 70px; 
+        margin-inline: 30px; 
         padding: 50px 90px;
     }
     #awards li, #pLanguage li, #contactList li {
@@ -407,7 +407,7 @@ body {
         font-size:20px;
     }
     #skillList li,#hobbyList li{
-        margin-inline: 35px; 
+        margin-inline: 25px; 
         padding: 20px 40px;
     }
     #awards li, #pLanguage li, #contactList li {
@@ -415,7 +415,7 @@ body {
         transition: transform 800ms ease-in-out;
     }
     #awards li:hover, #pLanguage li:hover, #contactList li:hover {
-        transform: scale(1.2) translateX(30px);
+        transform: scale(1.2) translateX(50px);
     }
 }
 @media only screen and (max-width: 400px) {
@@ -423,17 +423,17 @@ body {
         font-size: 10px;
     }
     #facePic img{
-        margin-left: 8px;
+        margin-left: 45px;
     }
     #skillList li,#hobbyList li{
-        margin-inline: 15px; 
-        padding: 5px 20px;
+        margin-inline: 5px; 
+        padding: 2px 3px;
     }
     #pLanguage li{
         font-size: 15px;
     }
     #awards li { 
-        font-size: 10px; 
+        font-size: 15px; 
     }
     .pieChart {
         width: 80px;
@@ -466,6 +466,6 @@ body {
         transition: transform 800ms ease-in-out;
     }
     #awards li:hover, #pLanguage li:hover, #contactList li:hover {
-        transform: scale(1.2) translateX(15px);
+        transform: scale(1.2) translateX(20px);
     }
 }
