@@ -93,7 +93,6 @@
 }
 #skillList li,#hobbyList li{
     position: relative;
-    margin-inline: 19px; 
     border: 10px solid black;
     padding: 50px 90px;
     transition: transform 800ms ease-in-out;
@@ -403,7 +402,7 @@ body {
         font-size:20px;
     }
     #skillList li,#hobbyList li{
-        margin-inline: 100px; 
+        margin-inline: 60px; 
         padding: 20px 40px;
     }
     #awards li:hover, #pLanguage li:hover, #contactList li:hover {
