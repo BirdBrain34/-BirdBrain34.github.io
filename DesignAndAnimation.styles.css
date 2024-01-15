@@ -386,12 +386,12 @@ body {
     flex-direction: column;
     height: 100vh;
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1200px) {
     #pfpList{
         font-size: 25px;
     }
     #skillList li,#hobbyList li{
-        margin-inline: 100px; 
+        margin-inline: 70px; 
         padding: 50px 90px;
     }
     #awards li, #pLanguage li, #contactList li {
@@ -402,12 +402,12 @@ body {
         transform: scale(1.2) translateX(100px);
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
     #pfpList{
         font-size:20px;
     }
     #skillList li,#hobbyList li{
-        margin-inline: 40px; 
+        margin-inline: 35px; 
         padding: 20px 40px;
     }
     #awards li, #pLanguage li, #contactList li {
