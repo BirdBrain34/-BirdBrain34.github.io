@@ -337,7 +337,7 @@
     transform: scale(1.2);
 }
 #sixthFlexBox{
-    background-color: #F34508;
+    background-color: #ED7117;
     margin-top: 0;
     padding-top: 0;
     position: relative;
@@ -420,7 +420,7 @@ body {
 }
 @media only screen and (max-width: 400px) {
     #pfpList{
-        font-size: 10px;
+        font-size: 15px;
     }
     #facePic img{
         margin-left: 45px;
